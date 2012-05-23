@@ -1,0 +1,7 @@
+<% cache [ "v1", page ] do %>
+
+<article class="page">
+	<div class="body"><%= Engrave::ApplicationHelper.markdown_to_html page.body %></div>
+</article>
+
+<% end %>
