@@ -7,17 +7,17 @@ require "engrave/version"
 Gem::Specification.new do |s|
   s.name        = "engrave"
   s.version     = Engrave::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of Engrave."
-  s.description = "TODO: Description of Engrave."
+  s.authors     = ["Jeff McFadden"]
+  s.email       = ["jeff.mcfadden@gmail.com"]
+  s.homepage    = "https://www.github.com/jeffmcfadden/engrave"
+  s.summary     = "Yet another Ruby blog engine."
+  s.description = "Yet another Ruby blog engine."
 
-  s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
+  s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.md"]
   s.test_files = Dir["test/**/*"]
 
   s.add_dependency "rails", "~> 3.2.3"
-  # s.add_dependency "jquery-rails"
-
-  s.add_development_dependency "sqlite3"
+  s.add_dependency "devise"
+  s.add_dependency "kramdown"
+  s.add_dependency "friendly_id", "~> 4.0.1"  
 end
