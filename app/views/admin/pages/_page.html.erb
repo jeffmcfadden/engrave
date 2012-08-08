@@ -1,0 +1,7 @@
+<% cache [ "v1", page ] do %>
+
+<article class="page">
+	<div class="body"><%= Kramdown::Document.new( page.body).to_html.html_safe %></div>
+</article>
+
+<% end %>
